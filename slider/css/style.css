@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+}
+
+.left,
+.right {
+  cursor: pointer;
+  width: 35px;
+}
+
+.slider {
+  display: flex;
+}
+
+.frame {
+  width: 80%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+.img-responsive {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  list-style-type: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border-color: rgb(59, 59, 59);
+}
+
+.active {
+  background-color: rgb(59, 59, 59);
+}
