@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: cadetblue;
+}
+
+.wrapper {
+  width: 770px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.wrapper .input-field {
+  z-index: -999;
+  opacity: 0;
+  position: absolute;
+}
+
+.wrapper .content-box {
+  padding: 13px 20px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.typing-text p {
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.typing-text p span.correct {
+  color: #01968e;
+}
+
+.typing-text p span.incorrect {
+  color: #f00;
+}
+
+.typing-text p span.active {
+  color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.typing-text p span.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  background-color: #000;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content-box .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #acabab;
+}
+
+.content .result-details {
+  width: calc(100% - 140px);
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.content .result-details li {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.result-details li:not(:first-child) {
+  border-left: 1px solid rgb(102, 102, 102);
+  padding-left: 20px;
+}
+
+.result-details li p {
+  font-size: 14px;
+}
+
+.result-details li p b {
+  font-weight: bold;
+}
+
+.result-details li span {
+  display: inline-block;
+  font-size: 20x;
+  margin-left: 10px;
+}
+
+.content button {
+  padding: 5px 20px;
+  cursor: pointer;
+  background: #009db6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
