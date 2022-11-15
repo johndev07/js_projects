@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: cadetblue;
+}
+
+.wrapper {
+  width: 420px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.wrapper h1 {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.wrapper .content {
+  margin: 25px 25px;
+}
+
+.wrapper .content input {
+  width: 100%;
+  margin-bottom: 25px;
+  height: 35px;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+.wrapper .content input:valid {
+  opacity: 1;
+}
+
+.content .reset-btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  padding: 15px 0;
+  background: #1bb295;
+  border-radius: 5px;
+  cursor: pointer;
+}
