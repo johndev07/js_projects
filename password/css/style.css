@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: rgb(23, 94, 97);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+}
+
+.box .inputBox {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  border: 0;
+  outline: none;
+  box-shadow: 0 15px 25px rgb(0 0 0 / 15%);
+}
+
+.box .inputBox input {
+  position: relative;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 10px 5px;
+}
+
+.box #togglebtn {
+  position: absolute;
+  right: -15px;
+  top: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  background: rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box #togglebtn::before {
+  content: "\f06e";
+  font-family: fontAwesome;
+  position: absolute;
+}
+
+.box #togglebtn.hide::before {
+  content: "\f070";
+  font-family: fontAwesome;
+  position: absolute;
+}
+
+.validation {
+  background: #374688;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  width: 328px;
+}
+
+.validation ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  gap: 8px;
+}
+
+.validation ul li {
+  display: flex;
+  position: relative;
+  list-style: none;
+  color: #fff;
+  font-size: 15px;
+  gap: 15px;
+  transition: 0.5s;
+}
+.validation ul li::before {
+  content: "\f192";
+  font-family: fontAwesome;
+  width: 20px;
+  height: 10px;
+  display: inline-block;
+}
+.validation ul li.valid::before {
+  color: green;
+}
