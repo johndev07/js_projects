@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #353535;
+}
+
+.container {
+  width: 300px;
+  padding: 30px;
+  border-radius: 30px;
+  min-height: 50vh;
+  box-shadow: rgb(30 31 31 / 52%) 8px 8px 43px inset,
+    rgb(255 255 255 / 7%) -8px -8px 25px inset,
+    rgb(255 255 255 / 6%) -8px -8px 12px, rgb(0 0 0 / 23%) 8px 8px 26px;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.container input {
+  min-height: 45px;
+  background-color: #373737;
+  border: none;
+  width: calc(100% - 30px);
+  outline: none;
+  padding: 5px;
+  padding-left: 25px;
+  color: #fff;
+  border-radius: 25px;
+  box-shadow: rgb(30 31 31 / 52%) 8px 8px 43px inset,
+    rgb(255 255 255 / 7%) -8px -8px 25px inset,
+    rgb(255 255 255 / 6%) -8px -8px 12px, rgb(0 0 0 / 23%) 8px 8px 26px;
+}
+
+.input-container button {
+  position: absolute;
+  top: 55%;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+  transform: translate(0, -50%);
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.ingredients_list {
+  padding: 0;
+}
+
+.add img {
+  fill: #fff;
+}
+
+.active {
+  display: block;
+}
+
+.ingredients_list li {
+  list-style-type: none;
+  line-height: 35px;
+  color: #ababab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ingredients_list li .icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.error {
+  width: 180px;
+  padding: 25px;
+  height: 50px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  border-radius: 10px;
+  color: #fff;
+  background: rgb(53 53 53);
+  box-shadow: 1px 1px 7px #ffffff73;
+  display: none;
+}
