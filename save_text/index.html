@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Save text</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <textarea required placeholder="Enter your text to save">
+        JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.
+      </textarea>
+      <div class="file-options">
+        <div class="option file-name">
+          <label>File Name</label>
+          <input type="text" placeholder="enter the filename" />
+        </div>
+        <div class="option save-as">
+          <label for="">Save as</label>
+          <select class="select-menu">
+            <option value="text/plain">Text File (.txt)</option>
+            <option value="text/javascript">Js File (.js)</option>
+            <option value="text/html">HTML File (.html)</option>
+            <option value="image/svg+xml">SVG File (.svg)</option>
+            <option value="application/msword">Doc File (.doc)</option>
+            <option value="application/vnd.ms-powerpoint">
+              PPT File (.ppt)
+            </option>
+          </select>
+        </div>
+      </div>
+      <button class="save-btn">Save as a text file</button>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

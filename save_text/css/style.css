@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #17a2bb;
+}
+
+.wrapper {
+  width: 450px;
+  border-radius: 7px;
+  background: #fff;
+  padding: 30px 25px 40px;
+}
+
+.wrapper :where(textarea, input, select, button) {
+  width: calc(100% - 26px);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.wrapper textarea {
+  height: 240px;
+  padding: 8px 13px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.wrapper .file-options {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.file-options .option {
+  width: calc(100% / 2 - 8px);
+}
+
+.option :where(input, .select-menu) {
+  height: 50px;
+  padding: 0 15px;
+  margin-top: 6px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+
+.option select {
+  height: 50px;
+  width: 100%;
+}
+
+.wrapper .save-btn {
+  margin-top: 20px;
+  padding: 16px 0;
+  background: #17a2bb;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.wrapper textarea:valid ~ .save-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
